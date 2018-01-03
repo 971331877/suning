@@ -6,7 +6,7 @@
     let zuo=document.querySelector(".banner2> .btn-left");
     // console.log(items);
     // console.log(dian);
-    console.log(bannerer,you,zuo,dian)
+   // console.log(bannerer,you,zuo,dian)
     dian.forEach(function (ele,index) {
         ele.onclick=function () {
             console.log(3)
@@ -71,4 +71,87 @@
                 flag=true;
             })
     })
+}
+// 返回顶部
+{
+    let totop=document.querySelector(".aside p");
+    totop.onclick=function () {
+        //     document.documentElement.scrollTop=0;
+        let st=document.documentElement.scrollTop;
+        let speend=st*30/500;
+        let t= setInterval(function () {
+            st-=speend;
+            if(st<=0){
+                st=0;
+                clearInterval(t);
+            }
+            document.documentElement.scrollTop=st;
+
+        },30)
+    }
+}
+//
+{
+    let topbanr=document.querySelector(".dh");
+    console.log(topbanr);
+    let letbars=document.querySelector(".aside");
+    // let floors=document.querySelectorAll(".floor");
+    let flag=true;
+    window.onscroll=function () {
+        if(flag){
+        let st= document.documentElement.scrollTop;
+        if(st>1300){
+            topbanr.style.display="block";
+            // topbanr.style.top="0"
+        }else{
+            topbanr.style.display="none"
+            // topbanr.style.top="-40"
+        }
+        if(st>2300){
+            letbars.style.display="block";
+        }else{
+            letbars.style.display="none";
+        }
+
+        floors.forEach(function (ele,index) {
+            if(st>ele.offsetTop){
+                for(let i=0;i<btns.length;i++){
+                    btns[i].classList.remove("active");
+                }
+                btns[index].classList.add("active");
+            }
+
+        })
+    }
+    }
+
+
+
+
+    //  跳转楼层
+    let btns=document.querySelectorAll(".aside li");
+    console.log(btns);
+    let floors=document.querySelectorAll(".zhengti .floor");
+    console.log(floors)
+    btns.forEach(function (ele,index) {
+        ele.onclick=function () {
+            flag=false;
+            console.log(1)
+            let ot=floors[index].offsetTop;
+            let now=document.documentElement.scrollTop;
+            let speed=(ot-now)*30/300;
+            let time=0;
+            let t=setInterval(function () {
+                now+=speed;
+                time+=30;
+                if(time==300){
+                    clearInterval(t);
+                    now=ot;
+                    flag=true;
+                }
+                document.documentElement.scrollTop=now;
+            },30)
+            // document.documentElement.scrollTop=ot;
+        }
+    });
 }
