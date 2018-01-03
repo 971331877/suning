@@ -114,7 +114,7 @@
         }
 
         floors.forEach(function (ele,index) {
-            if(st>ele.offsetTop){
+            if(st>ele.offsetTop-260){
                 for(let i=0;i<btns.length;i++){
                     btns[i].classList.remove("active");
                 }
