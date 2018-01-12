@@ -229,7 +229,7 @@
 	font-family: 'iconfont';
 	font-size: 11px;
 	margin-top: 12px;
-	margin-left: 17px;
+	/*margin-left: 17px;*/
 	display: block;
 	float: left;
 	margin-right: 14px;
@@ -257,6 +257,9 @@
 	border-right: 1px solid #F5f5f5;
 	border-top: 1px solid #F5f5f5;
 	position: relative;
+}
+.boxlf-yc a:first-child{
+    margin-left: 17px;
 }
 .boxlf-yc:hover{
 	background: #FFFFFF;
@@ -323,6 +326,7 @@
 }
 .box-right .rt1:nth-child(9){
 	margin-right: 0px;
+    margin-left: 0px;
 }
 .rt2:hover{
 	color: #ff6700;
