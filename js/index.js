@@ -155,3 +155,46 @@
         }
     });
 }
+
+// yc
+{
+    let tabz2=document.querySelector(".boxlf-yc");
+    let tabewm=document.querySelector(".yc-wz");
+    tabz2.onmouseover=function () {
+        tabewm.style.display="block";
+    };
+    tabz2.onmouseout=function(){
+        tabewm.style.display="none"
+    }
+}
+
+//ce
+let  ce=document.querySelectorAll(".bar-nav .nav1-u1 li");
+let  nav=document.querySelectorAll(".ce-yc");
+let banner=document.querySelector(".bannera")
+console.log(ce)
+ce.forEach(function (ele,index) {
+    ele.onmouseover=function(){
+        nav.forEach(function(ele){
+            ele.style.display="none";
+        })
+        nav[index].style.display="block";
+        // ce[index].style.borderColor="#3eb4fa";
+        ce[index].classList.add("cur");
+        // ce[index].style.borderRight="#fff";
+    }
+    nav[index].onmouseout=function(){
+        nav[index].style.display="none";
+        ce[index].classList.remove("cur");
+    }
+    nav[index].onmouseover=function(){
+        ce[index].classList.add("cur");
+        nav[index].style.display="block";
+    }
+    ce[index].onmouseout=function(){
+        ce[index].classList.remove("cur");
+        nav[index].style.display="none";
+
+        // ce[index].style.borderColor="#fff";
+    }
+})

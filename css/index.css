@@ -229,11 +229,40 @@
 	font-family: 'iconfont';
 	font-size: 11px;
 	margin-top: 12px;
-	margin-left: 9px;
+	margin-left: 17px;
 	display: block;
 	float: left;
-	margin-right: 22px;
+	margin-right: 14px;
 	color: #666666
+}
+.yc-wz{
+	width: 988px;
+	padding: 20px 0;
+	left: 0;
+	left: auto;
+	position: absolute;
+	top: 35px;
+	border: 1px solid #ddd;
+	border-top: 1px solid #fff;
+	background: #fff;
+	left: -1px;
+	z-index: 99;
+	display: none;
+}
+.boxlf-yc{
+	width: 91px;
+	height: 35px;
+	float: left;
+	border-left: 1px solid #F5f5f5;
+	border-right: 1px solid #F5f5f5;
+	border-top: 1px solid #F5f5f5;
+	position: relative;
+}
+.boxlf-yc:hover{
+	background: #FFFFFF;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-top: 1px solid #ddd;
 }
 .box-left .iconfont:nth-child(2){
 	margin-left: 0;
@@ -2362,6 +2391,20 @@ footer p:last-of-type a{
 	float: left;
 	color: #333;
 }
+.ce-yc{
+	display: none;
+	width: 1000px;
+	height: 440px;
+	position: absolute;
+	left: 190px;
+	min-height: 438px;
+	overflow: hidden;
+	background: #FFF;
+	z-index: 7676;
+	border-right: 1px solid #382526;
+	border-top: 1px solid #382526;
+	border-bottom: 1px solid #382526;
+}
 .bar-nav .nav2 li span{
 	position: absolute;
 	width: 25px;
@@ -2772,4 +2815,115 @@ footer p:last-of-type a{
 	width: 1190px;
 	height: 318px;
 }
+@font-face {
+	font-family: 'iconfont11';  /* project id 540571 */
+	src: url('http://at.alicdn.com/t/font_540571_kxd36lgt41b57b9.eot');
+	src: url('http://at.alicdn.com/t/font_540571_kxd36lgt41b57b9.eot?#iefix') format('embedded-opentype'),
+	url('http://at.alicdn.com/t/font_540571_kxd36lgt41b57b9.woff') format('woff'),
+	url('http://at.alicdn.com/t/font_540571_kxd36lgt41b57b9.ttf') format('truetype'),
+	url('http://at.alicdn.com/t/font_540571_kxd36lgt41b57b9.svg#iconfont') format('svg');
+}
+.iconfont11{
+	font-family: iconfont11;
+}
+.rt-dhyc{
+	width: 35px;
+	height: 662px;
+	position: fixed;
+	right: 0;
+	top:0;
+	background: #333;
+	z-index: 9999999;
+
+}
+.cur-rw{
+	width: 35px;
+	height: 30px;
+	margin-top: 180px;
+	color: #FFAA00;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	cursor: pointer;
+}
+.cur-rw:hover{
+	background: #FFAA00;
+	color: #FFFFFF;
+}
+.cur-rw1{
+	width: 35px;
+	height: 106px;
+	border-bottom: 1px solid #999999;
+	border-top: 1px solid #999999;
+	margin-top: 10px;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 10px;
+}
+.cur-rw1:hover{
+	background: #FFAA00;
+}
+.rt-boxo{
+	width: 110px;
+	height:662px;
+	position: fixed;
+	right: 0;
+	top:0;
+	z-index: 99999;
+
+}
+.cur-rw2{
+	width: 110px;
+	height: 300px;
+	/*background: red;*/
+	position: fixed;
+	right: 0;
+	top:340px;
+
+}
+.cur-rw22{
+	width: 110px;
+	height: 30px;
+	/*background: yellow;*/
+	/*float: right;*/
+	margin-bottom: 5px;
+}
+.cur-rw23{
+	width: 35px;
+	height: 30px;
+	/*background: red;*/
+	float: right;
+	color: #FFAA00;
+	font-size: 16px;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+	position: relative;
+
+}
+.cur-rw23:hover{
+	background: #FFAA00;
+	color: #FFFFFF;
+}
+.cur-rw24{
+	width: 75px;
+	height: 30px;
+	background: #FFAA00;
+	color: #fff;
+	font-size: 12px;
+	line-height: 30px;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	right:-75px;
+	/*transition: all 0.1s;*/
+}
+.cur-rw23:hover .cur-rw24{
+	right: 35px;
+}
+.cur-rw244{
+	margin-top: 40px;
+}
+
 
